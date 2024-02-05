@@ -1,0 +1,18 @@
+builds:
+    - id: noti
+      dir: . # default is .
+      main: .
+      env:
+          - GOPRIVATE=git.internal.example.com,source.developers.google.com
+          - CGO_ENABLED=0
+      flags:
+          - -tags
+          - netgo
+      ldflags:
+          - -s -w
+          - -extldflags "-static"
+defaultPlatforms:
+    - linux/amd64
+    - linux/arm32v6
+    - linux/arm32v7
+    - linux/arm64
