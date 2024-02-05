@@ -1,4 +1,4 @@
-module github.com/kittizz/kittiz-notify
+module github.com/kittizz/kittizz-notify
 
 go 1.21.6
 
